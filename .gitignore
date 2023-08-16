@@ -34,3 +34,4 @@ replay_pid*
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+/.idea/
