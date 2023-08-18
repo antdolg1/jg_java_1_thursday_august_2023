@@ -1,4 +1,4 @@
-package students.denis_asipenka.lesson2.level3;
+package students.denis_asipenka.lesson_2.level_3;
 import java.util.Scanner;
 public class Task_11 {
     public static void main(String[] args) {

@@ -1,29 +1,33 @@
-package students.denis_asipenka.lesson2.level1;
 
+
+package students.denis_asipenka.lesson_2.level_1;
 import java.util.Scanner;
+public class Task_1 {
 
-public class Task_2 {
-    public static void main(String[] args) {
-        // Scanner ol = new Scanner(System.in);
+    public static void main(String[] args){
         System.out.println("Введите число:");
         Scanner cislo = new Scanner(System.in);
-        double firstNumber = cislo.nextDouble();
+        int firstNumber = cislo.nextInt();
         System.out.println("Введите число:");
-        double numbertwo = cislo.nextDouble();
+        int numbertwo = cislo.nextInt();
 
-
-
-        double sum = firstNumber + numbertwo;
+        int sum = firstNumber+numbertwo;
         System.out.println("Результат сложения:");
         System.out.println(sum);
-        double subtraction = firstNumber - numbertwo;
+        int subtraction = firstNumber-numbertwo;
         System.out.println("Результат вычетания:");
         System.out.println(subtraction);
-        double multiplication = firstNumber * numbertwo;
+        int multiplication = firstNumber*numbertwo;
         System.out.println("Результат умножения:");
         System.out.println(multiplication);
         System.out.println("Результат деления:");
-        double division = firstNumber / numbertwo;
+        double division = firstNumber/(double)numbertwo;
         System.out.println(division);
+
+
+
     }
+
+
+
 }
