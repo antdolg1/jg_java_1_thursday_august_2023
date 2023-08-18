@@ -62,7 +62,8 @@
 
 #### Записи лекций
 
-* [Лекция 1](https://www.youtube.com/watch?v=2ozBFrlVhec)
+* [Лекция 1](https://www.youtube.com/watch?v=rQiWa6snbDI)
+* [Лекция 2](https://www.youtube.com/watch?v=HVjpEWtKN1s)
 
 ---
 
