@@ -2,7 +2,7 @@ package students.denis_asipenka.lesson2.level1;
 
 import java.util.Scanner;
 
-public class Level1_Task2 {
+public class Task_2 {
     public static void main(String[] args) {
         // Scanner ol = new Scanner(System.in);
         System.out.println("Введите число:");

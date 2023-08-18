@@ -1,6 +1,6 @@
 package students.denis_asipenka.lesson2.level3;
 import java.util.Scanner;
-public class Level3_Task9 {
+public class Task_9 {
     public static void main(String[] args) {
         System.out.println("Введите  число:");
         Scanner scanner = new Scanner(System.in);

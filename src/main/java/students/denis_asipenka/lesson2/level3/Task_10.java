@@ -1,6 +1,6 @@
 package students.denis_asipenka.lesson2.level3;
 import java.util.Scanner;
-public class Level3_Task10 {
+public class Task_10 {
     public static void main(String[] args) {
     System.out.println("Введите радиус круга:");
     Scanner scanner = new Scanner(System.in);
