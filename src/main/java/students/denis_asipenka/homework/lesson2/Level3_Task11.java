@@ -1,6 +1,6 @@
 package students.denis_asipenka.homework.lesson2;
 import java.util.Scanner;
-public class level3_task11 {
+public class Level3_Task11 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
