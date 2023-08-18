@@ -1,4 +1,4 @@
-package students.denis_asipenka.homework.lesson2;
+package students.denis_asipenka.lesson2.level5;
 
 public class Level5_Task15 {
     public static void main(String[] args) {
