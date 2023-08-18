@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class level1_task1 {
 
     public static void main(String[] args){
-       // Scanner ol = new Scanner(System.in);
         System.out.println("Введите число:");
         Scanner cislo = new Scanner(System.in);
         int firstNumber = cislo.nextInt();
