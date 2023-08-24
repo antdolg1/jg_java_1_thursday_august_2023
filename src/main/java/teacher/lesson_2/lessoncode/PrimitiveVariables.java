@@ -1,29 +1,29 @@
 package teacher.lesson_2.lessoncode;
 
 public class PrimitiveVariables {
-
     public static void main(String[] args) {
 
-        byte myByte = 4;
-        short myShort = 555;
+        byte myByte = 2;
 
-        int myInt = 123123123;
-        long myLong = 132132131231321L;
+        byte myByteNew;
+        myByteNew = 3;
+
+        short myShort = 45;
+
+        int myInt = 123333;
+        int myIntNew = 1_000_000_000;
+        int myIntNewTwo = 1000000000;
+
+        long myLong = 212132132131L;
 
         float myFloat = 3.14F;
-        float myFloatTwo = 3.14f;
 
-        double myDouble = 12.123321;
+        double myDouble = 3.11212;
 
         boolean myBoolean = true;
+        boolean myBooleanFalse = false;
 
-        char myChar = 's';
-        char myCharTwo = '\u0001';
+        char myChar = 'n';
 
-        System.out.println(myByte);
-        System.out.println("Hello World this is JavaGuru");
-
-        System.out.println("myShort variable value is " + myShort);
     }
-
 }
