@@ -1,7 +1,7 @@
 package students.aleksandrs_kunicins.homework.lesson_3.level_3;
+//Task_13
 
-public class Task_13{
-    public class Robot{
+     class Robot{
         public String robotName;
         public Robot(String robotName){
             this.robotName = robotName;
@@ -12,10 +12,10 @@ public class Task_13{
     
     }
 
-    class RobotDemo{
+    public class RobotDemo{
         public static void main(String[] args) {
             Robot robot = new Robot("Anton");
             robot.sayHello();
         }
     }
-} 
+
