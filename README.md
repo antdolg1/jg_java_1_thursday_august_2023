@@ -64,6 +64,7 @@
 
 * [Лекция 1](https://www.youtube.com/watch?v=rQiWa6snbDI)
 * [Лекция 2](https://www.youtube.com/watch?v=HVjpEWtKN1s)
+* [Лекция 3](https://www.youtube.com/watch?v=vodee54rqHM)
 
 ---
 
@@ -84,7 +85,7 @@
 
 #### Обратная связь
 
-* [Telegram]()
+* [Telegram](https://t.me/+Hp3t8IYfh7BkNzc0)
 
 ---
 
