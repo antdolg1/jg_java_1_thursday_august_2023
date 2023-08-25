@@ -4,20 +4,41 @@ public class ArithmeticOperators {
 
     public static void main(String[] args) {
 
-        int number1 = 10;
-        int number2 = 4;
+        int numberOne = 2;
+        int numberTwo = 4;
+        int sumResult = numberOne + numberTwo;
+        int subtractResult = numberOne - numberTwo;
+        int divisionResult = numberTwo / numberOne;
+        int multiplicationResult = numberTwo * numberOne;
 
-        double number3 = 10.0;
-        double number4 = 4.0;
+        /*
+        System.out.println("Hello World");
 
-        int sum = number1 + number2;
-        int division = number1 / number2;
-        double divisionOfDoubles = number3 / number4;
+        System.out.println(sumResult);
 
-        System.out.println("Sum of number1 and number2 is " + sum);
+        System.out.println("numberOne and numberTwo sum is: " + sumResult);
+        System.out.println("numberOne and numberTwo subtraction is: " + subtractResult);
+        System.out.println("numberOne and numberTwo division is: " + divisionResult);
+        System.out.println("numberOne and numberTwo multiplication is: " + multiplicationResult);
 
-        System.out.println("Division of 10 to 4 result is " + division);
-        System.out.println("Division of 10 to 4 result is " + divisionOfDoubles);
+         */
+        System.out.println(); //shortcut: type sout and press tab
+
+        //this is line comment
+        //this is second line comment
+
+        /*
+        djosajdsajdsa
+        dsadsadsa
+        dsadsadsad
+        System.out.println("Hello!!!");
+        */
+
+        System.out.println(1 + 2 + 3);
+        System.out.println("1" + 2 + 3);
+        System.out.println(1 + "2" + 3);
+        System.out.println(1 + 2 + "3");
+        System.out.println(10/4);
 
     }
 }
