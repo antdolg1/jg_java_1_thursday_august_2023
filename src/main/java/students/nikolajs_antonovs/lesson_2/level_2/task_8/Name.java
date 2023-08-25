@@ -1,7 +1,7 @@
 package students.nikolajs_antonovs.lesson_2.level_2.task_8;
 
 import java.util.Scanner;
-public class Name {
+class Name {
 
     public static void main(String[] args) {
 
