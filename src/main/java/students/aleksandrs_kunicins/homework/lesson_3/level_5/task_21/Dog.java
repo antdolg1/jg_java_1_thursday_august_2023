@@ -1,4 +1,4 @@
-package students.aleksandrs_kunicins.homework.lesson_3.level_5;
+package students.aleksandrs_kunicins.homework.lesson_3.level_5.task_21;
 
 class Dog{
     String dogName;
@@ -17,7 +17,7 @@ class Dog{
 
 class DogDemo{
     public static void main(String[] args) {
-        Dog dog = new Dog(" Max ", "black ", 4);
+    Dog dog = new Dog(" Max ", "black ", 4);
         dog.voice();
     }
 }

@@ -1,19 +1,23 @@
 package students.aleksandrs_kunicins.homework.lesson_3.level_3;
 
-        class Robot{
-            String robotName;
-             Robot(String robotName){
-                this.robotName = robotName;
+class Robot {
+    String robotName;
+
+    Robot(String robotName) {
+        this.robotName = robotName;
     }
-    public void sayHello(){
+
+    public void sayHello() {
         System.out.println("Hello!!!");
     }
-    public void sayYourName(String robotName){
-        System.out.println("Hello "+robotName);
+
+    public void sayYourName(String robotName) {
+        System.out.println("Hello " + robotName);
     }
 
 }
- class RobotDemo{
+
+class RobotDemo {
     public static void main(String[] args) {
         Robot robot1 = new Robot("R2D2");
         robot1.sayHello();

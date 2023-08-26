@@ -1,4 +1,4 @@
-package students.aleksandrs_kunicins.homework.lesson_3.level_5;
+package students.aleksandrs_kunicins.homework.lesson_3.level_5.task_18;
 
 class Dog{
      String dogName;
