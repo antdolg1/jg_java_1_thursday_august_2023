@@ -2,7 +2,7 @@ package students.julija_pilenkova.homework.lesson_3.level_1;
 
 import students.julija_pilenkova.homework.lesson_3.level_1.Robot;
 
-public class Robot_Demo {
+ class Robot_Demo {
 
     public static void main(String [] args) {
 
