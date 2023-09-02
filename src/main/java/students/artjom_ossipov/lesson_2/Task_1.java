@@ -19,7 +19,7 @@ public class Task_1 {
             System.out.println("На ноль не делим :) ");
         }
         else {
-        System.out.println("Частное двух чисел = " + a);
+            System.out.println("Частное двух чисел = " + a);
         }
     }
 }
