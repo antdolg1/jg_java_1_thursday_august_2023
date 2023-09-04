@@ -1,7 +1,8 @@
-package students.artjom_ossipov.lesson_2;
+package students.artjom_ossipov.lesson_2.level_1.Task_1;
+
 import java.util.Scanner;
 
-public class Task_1 {
+public class Calculator {
     public static void main(String[] args){
         System.out.println("Пожалуйста, введите два целых числа для выполнения математических операций");
         System.out.println("Введите первое число");
