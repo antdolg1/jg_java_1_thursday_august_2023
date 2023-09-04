@@ -1,4 +1,4 @@
-package teacher.lessoncode;
+package teacher.lesson_4.lessoncode;
 
 public class IfElseStatement {
 
