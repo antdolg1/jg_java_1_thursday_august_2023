@@ -2,8 +2,10 @@ package students.kristina_konovalchuk.lesson2.level_1;
 
 import java.util.Scanner;
 
-public class Task_1 {
-    public static void main(System[] args){
+ public class Task_1 {
+
+
+    public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите первое число:");
