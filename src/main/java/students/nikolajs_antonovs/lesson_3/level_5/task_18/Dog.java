@@ -3,7 +3,6 @@ package students.nikolajs_antonovs.lesson_3.level_5.task_18;
 public class Dog {
 
     String name;
-    int age;
 
     Dog(String dogName, int age){
         this.name = dogName;
