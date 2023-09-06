@@ -1,6 +1,6 @@
 package students.nikolajs_antonovs.lesson_3.level_1;
 
-public class Robot {
+class Robot {
 
     String name;
 
@@ -9,17 +9,16 @@ public class Robot {
     }
 
     public void sayHello() {
-
         System.out.println("Hello!");
     }
 
     void sayYourName() {
-        System.out.println("My name is " + this.name);
+        System.out.println("My name is " + this.name + "!");
+    }
+    void happyBirthday() {
+
     }
 
     public Robot() {
-
     }
-
-
 }

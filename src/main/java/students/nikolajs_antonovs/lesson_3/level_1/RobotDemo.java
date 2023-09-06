@@ -2,7 +2,7 @@ package students.nikolajs_antonovs.lesson_3.level_1;
 
 import students.nikolajs_antonovs.lesson_3.level_1.Robot;
 
-public class RobotDemo {
+class RobotDemo {
 
     public static void main(String[] args) {
 
@@ -14,8 +14,10 @@ public class RobotDemo {
         Robot robot2 = new Robot("John");
         robot2.sayHello();
         robot2.sayYourName();
+        System.out.println("------------");
 
-
+        Robot robot3 = new Robot("Robo");
+        robot3.sayHello();
+        robot3.sayYourName();
     }
-
 }
