@@ -12,7 +12,7 @@ public class Task_6 {
         int number2 = scanner.nextInt();
 
         if (number1 < number2){
-            System.out.println("" + number1);
+            System.out.println("Число отрицательное" + number1);
 
         } else if (number2 < number1) {
             System.out.println("Число отрицательное" + number2) ;
