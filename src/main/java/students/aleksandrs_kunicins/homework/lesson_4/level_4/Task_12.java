@@ -1,6 +1,6 @@
 package students.aleksandrs_kunicins.homework.lesson_4.level_4;
 
-class CalculatorTest{
+class CalculatorTest1{
     public static void main(String[] args) {
     int firstNumber = 10;
     int secondNumber = 5;

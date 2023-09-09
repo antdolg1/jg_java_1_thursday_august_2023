@@ -1,6 +1,6 @@
 package students.aleksandrs_kunicins.homework.lesson_4.level_4;
 
- class CalculatorTest {
+ class CalculatorTest3 {
     public static void main(String[] args) {
         Calculator calc = new Calculator();
 
