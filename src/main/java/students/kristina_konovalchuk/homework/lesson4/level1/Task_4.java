@@ -1,4 +1,4 @@
-package students.kristina_konovalchuk.homework.lesson4;
+package students.kristina_konovalchuk.homework.lesson4.level1;
 
 import java.util.Scanner;
 
