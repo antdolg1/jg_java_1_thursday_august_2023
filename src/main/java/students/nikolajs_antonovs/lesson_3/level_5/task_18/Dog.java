@@ -1,6 +1,6 @@
 package students.nikolajs_antonovs.lesson_3.level_5.task_18;
 
-public class Dog {
+ class Dog {
 
     String name;
 
@@ -13,7 +13,5 @@ public class Dog {
     void voice(){
         System.out.println("Woof");
     }
-    public Dog(){
 
-    }
 }

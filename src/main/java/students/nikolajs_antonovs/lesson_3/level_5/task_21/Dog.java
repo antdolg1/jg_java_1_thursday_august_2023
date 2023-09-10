@@ -1,15 +1,15 @@
-package students.nikolajs_antonovs.lesson_3.level_5.task_20;
+package students.nikolajs_antonovs.lesson_3.level_5.task_21;
 
 class Dog {
 
     String name;
     int age;
-    int newAge;
+    String color;
 
-    Dog(String dogName, int dogAge) {
+    Dog(String dogName, int dogAge, String dogColor) {
         this.name = dogName;
         this.age = dogAge;
-        this.newAge = age + 1;
+        this.color = dogColor;
     }
 
     void sayName() {
@@ -23,13 +23,7 @@ class Dog {
     void voice() {
         System.out.println("Woof");
     }
-
-    void happyBirthday() {
-        System.out.println("Dog is celebrating birthday!");
+    void color() {
+        System.out.println("Dog color is " + color);
     }
-
-    void newAge() {
-        System.out.println("Dog age is " + newAge);
-    }
-
 }

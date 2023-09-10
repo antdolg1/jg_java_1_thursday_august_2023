@@ -1,7 +1,6 @@
 package students.nikolajs_antonovs.lesson_3.level_4.task_17;
 
-class BankAccountDemo {
-
+public class BankAccauntDemo {
     public static void main(String[] args) {
         BankAccount bankAccount = new BankAccount("Viktor", "Savonin", 100000);
         String ownerFirstName = bankAccount.getOwnerFirstName();
@@ -11,5 +10,5 @@ class BankAccountDemo {
         System.out.println("Owner last name = " + ownerLastName);
         System.out.println("Money amount = " + moneyAmount);
     }
-
 }
+

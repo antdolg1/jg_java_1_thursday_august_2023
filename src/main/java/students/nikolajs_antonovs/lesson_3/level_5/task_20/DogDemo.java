@@ -1,7 +1,6 @@
 package students.nikolajs_antonovs.lesson_3.level_5.task_20;
 
-
-public class DogDemo {
+ class DogDemo {
 
     public static void main(String[] args) {
         Dog dog = new Dog("Tyson", 3);
@@ -11,9 +10,5 @@ public class DogDemo {
         dog.happyBirthday();
         dog.voice();
         dog.newAge();
-
-
     }
-
-
 }
