@@ -1,6 +1,6 @@
 package students.aleksandrs_kunicins.homework.lesson_5.level_6_middle;
 import java.util.Arrays;
-class ArrayUtil1 {
+class ArrayUtil4 {
 
     public int findMaxNumber(int[] array) {
         Arrays.sort(array);
@@ -22,7 +22,7 @@ class ArrayUtilTest {
     }
 
     public void shouldFindMaxNumber() {
-        ArrayUtil1 au1 = new ArrayUtil1();
+        ArrayUtil4 au1 = new ArrayUtil4();
         int [] array = {14,90,30};
         int exected = 90;
         int real = au1.findMaxNumber(array);

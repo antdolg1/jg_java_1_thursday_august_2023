@@ -5,7 +5,7 @@ import java.util.Arrays;
 // Создайте в классе ArrayUtil метод для
 // нахождения минимального числа в массиве целых чисел.
 
-class ArrayUtil2 {
+class ArrayUtil5 {
 
     public int findMinNumber(int[] array) {
         Arrays.sort(array);

@@ -5,7 +5,7 @@ import java.util.Arrays;
 // Создайте в классе ArrayUtil метод для
 // распечатки массива целых чисел на консоль.
 
-class ArrayUtil {
+class ArrayUtil2 {
 
     public void printArrayToConsole(int[] array) {
         System.out.println(Arrays.toString(array));

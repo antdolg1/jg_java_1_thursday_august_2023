@@ -19,7 +19,7 @@ class ArrayUtilTest2 {
     }
 
     public void shouldFindMaxNumber() {
-        ArrayUtil1 au1 = new ArrayUtil1();
+        ArrayUtil4 au1 = new ArrayUtil4();
         int [] array = {14,90,30};
         int exected = 90;
         int real = au1.findMaxNumber(array);
@@ -32,7 +32,7 @@ class ArrayUtilTest2 {
     }
 
     public void shouldFindMinNumber() {
-        ArrayUtil2 au2 = new ArrayUtil2();
+        ArrayUtil5 au2 = new ArrayUtil5();
         int[] array = {54,123,32};
         int exected = 32;
         int real = au2.findMinNumber(array);
