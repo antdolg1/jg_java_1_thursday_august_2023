@@ -25,8 +25,8 @@ class Product {
     void printInformation() {
         System.out.println("Fruit: " + fruit + "\n" +
                 "Price is: " + regularPrice + "\n" +
-                "Discaunt is: " + discount + "\n" +
-                "Actual price is " + actualPrice());
+                "Discount is: " + discount + "\n" +
+                "Actual price is: " + actualPrice());
 
     }
 }
