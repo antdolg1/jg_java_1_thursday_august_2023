@@ -1,22 +1,20 @@
-Найти логическую ошибку в коде.
-Исправить и запустить программу так, что бы она выводила
-на консоль владельца банковского счёта и количество денег.
-Менять можно только класс BankAccount.
+package students.denis_asipenka.lesson_3.level_7_task_32;
 
 class BankAccount {
 
     String owner;
     int money;
 
-    BankAccount(int moneyAmount) {
-        this.owner = owner;
+    BankAccount(String moneyAmount,int money) {
+        this.owner = moneyAmount;
+        this.money=money;
     }
 
     String getOwner() {
         return this.owner;
     }
 
-    void getMoney() {
+    int getMoney() {
         return this.money;
     }
 

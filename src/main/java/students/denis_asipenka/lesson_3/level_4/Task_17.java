@@ -1,5 +1,4 @@
-Найти ошибку в коде.
-Исправить и запустить программу.
+package students.denis_asipenka.lesson_3.level_4;
 
 class BankAccount {
 
@@ -7,23 +6,21 @@ class BankAccount {
     String ownerLastName;
     int moneyAmount;
 
-    BankAccount(String ownerFirstName,
-                String ownerLastName
-                int moneyAmount) {
+    BankAccount(String ownerFirstName, String ownerLastName,int moneyAmount) {
         this.ownerFirstName = ownerFirstName;
         this.ownerLastName = ownerLastName;
-        this.money = money;
+        this.moneyAmount = moneyAmount;
     }
 
-    String getOwnerFirstName( {
-        return this.ownerFirstName
+    String getOwnerFirstName() {
+        return this.ownerFirstName;
     }
 
-    String getOwnerLastName) {
-        return this.ownerFirstName
+    String getOwnerLastName() {
+        return this.ownerFirstName;
     }
 
-    void getMoneyAmount() {
+    int getMoneyAmount() {
         return this.moneyAmount;
     }
 
@@ -34,8 +31,8 @@ class BankAccountDemo {
     public static void main(String[] args) {
         BankAccount bankAccount = new BankAccount("Viktor", "Savonin", 100000);
         String ownerFirstName = bankAccount.getOwnerFirstName();
-        String ownerFirstName = bankAccount.getOwnerLastName();
-        String moneyAmount = bankAccount.getMoneyAmount();
+        String ownerLastName = bankAccount.getOwnerLastName();
+        int moneyAmount = bankAccount.getMoneyAmount();
         System.out.println("Owner first name = " + ownerFirstName);
         System.out.println("Owner last name = " + ownerLastName);
         System.out.println("Money amount = " + moneyAmount);
