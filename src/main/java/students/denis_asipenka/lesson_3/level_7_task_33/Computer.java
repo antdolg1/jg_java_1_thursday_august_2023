@@ -1,6 +1,4 @@
-Дописать код программы, что бы она запускалась
-и выводила на консоль производителя и модель компьютера.
-Менять можно только класс Computer.
+package students.denis_asipenka.lesson_3.level_7_task_33;
 
 class Computer {
 
@@ -11,6 +9,8 @@ class Computer {
         this.manufacturer = manufacturer;
         this.model = model;
     }
+    String getManufacturer(){return this.manufacturer;}
+    String getModel(){return  this.model;}
 
 }
 
