@@ -1,4 +1,4 @@
-package students.kristina_konovalchuk.homework.lesson5.level_3;
+package students.kristina_konovalchuk.homework.lesson5.level_4;
 
 import java.util.Random;
 import java.util.Scanner;
