@@ -4,15 +4,14 @@ import java.util.Scanner;
 
 public class WhileLoopContinue {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int numFromUser;
-        do {
-            System.out.println("Guess the number between 1 to 10 ");
-            numFromUser = scanner.nextInt();
+        int a = 100;
 
-        } while (numFromUser != 5);
-        System.out.println("Its 5!");
+        while (a > 1) {
+            a++;
+            if (a % 2 == 0)
+                continue;
+            System.out.println(a);
 
-
+        }
     }
 }
