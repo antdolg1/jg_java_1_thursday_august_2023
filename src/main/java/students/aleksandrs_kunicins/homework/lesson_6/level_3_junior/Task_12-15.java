@@ -22,7 +22,9 @@ class ArrayService{
         array[0]=numberToReplace;
         return array;
     }
-}
+
+    }
+
 class ArrayServiceTest {
     public static void main(String[] args) {
         ArrayServiceTest test = new ArrayServiceTest();
