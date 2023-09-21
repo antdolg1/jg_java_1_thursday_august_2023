@@ -18,6 +18,10 @@ class ArrayService{
         }
         return repeats;
     }
+    int[] replaceFirstNumber(int[]array,int numberToReplace){
+        array[0]=numberToReplace;
+        return array;
+    }
 }
 class ArrayServiceTest {
     public static void main(String[] args) {
@@ -27,6 +31,7 @@ class ArrayServiceTest {
         test.shouldReturnCountOfReapets();
         test.shouldReturnZero();
         test.shouldReturnThree();
+        test.shouldReplaceFirstNumber();
     }
 
     public void shouldReturnTrue(){
@@ -95,5 +100,27 @@ class ArrayServiceTest {
         }else{
             System.out.println("Test 3 repeat : FAIL!");
         }
+    }
+    public void shouldReplaceFirstNumber(){
+        ArrayService service = new ArrayService();
+        int [] arrayBefore = {1,2,3,4,5,6,7,8};
+        int numberToCHange = 5;
+        int [] arrayExpected = {numberToCHange,2,3,4,5,6,7,8};
+        int [] realArray = service.replaceFirstNumber(arrayBefore, numberToCHange);
+        int realResult = 0;
+        int expectedResult = 0;
+        for (int i:realArray){
+            realResult += i;
+        }
+        for (int a:arrayExpected){
+            expectedResult += a;
+        }
+        if (expectedResult == realResult){
+            System.out.println("Replace number test = OK!");
+        }else{
+            System.out.println("Replace number test = FAIL!");
+
+        }
+
     }
 }
