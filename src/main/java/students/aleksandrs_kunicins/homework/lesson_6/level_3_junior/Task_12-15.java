@@ -9,6 +9,7 @@ class ArrayService{
         }
     }return contain;
 }
+
     int findRepeats(int[] array,int numberToFindReapets){
         int repeats = 0;
         for (int i :array){
@@ -18,13 +19,21 @@ class ArrayService{
         }
         return repeats;
     }
+
     int[] replaceFirstNumber(int[]array,int numberToReplace){
         array[0]=numberToReplace;
         return array;
     }
 
+    // int[] reverseArray(int [] arrayToReverse){ 
+    //     int countOfElements = arrayToReverse.length; //3
+    //     int[] newArray = {};
+    //     for (int i = 0;i <= countOfElements;i++){
+    //         int elements = countOfElements-1;
+    //     }return newArray;
+    // }
     }
-
+    
 class ArrayServiceTest {
     public static void main(String[] args) {
         ArrayServiceTest test = new ArrayServiceTest();
@@ -34,6 +43,7 @@ class ArrayServiceTest {
         test.shouldReturnZero();
         test.shouldReturnThree();
         test.shouldReplaceFirstNumber();
+        test.shouldReturnReversedArray();
     }
 
     public void shouldReturnTrue(){
@@ -125,4 +135,12 @@ class ArrayServiceTest {
         }
 
     }
+    // public void shouldReturnReversedArray(){
+    //     ArrayService service = new ArrayService();
+    //     int [] array = {1,2,3,4,5};
+    //     int [] newArray = service.reverseArray(array);
+    //     for (int i:newArray){
+    //         System.out.println(i);
+    //     }
+    // }
 }
