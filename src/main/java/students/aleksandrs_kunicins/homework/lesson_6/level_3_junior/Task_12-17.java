@@ -1,5 +1,7 @@
 package students.aleksandrs_kunicins.homework.lesson_6.level_3_junior;
 
+import java.util.Arrays;
+
 class ArrayService{
     boolean isInArray(int[] arr,int number){
         boolean contain = false;
@@ -25,14 +27,23 @@ class ArrayService{
         return array;
     }
 
-    // int[] reverseArray(int [] arrayToReverse){ 
-    //     int countOfElements = arrayToReverse.length; //3
-    //     int[] newArray = {};
-    //     for (int i = 0;i <= countOfElements;i++){
-    //         int elements = countOfElements-1;
-    //     }return newArray;
-    // }
+    int[] reverseArray(int [] arrayToReverse){ 
+        int countOfElements = arrayToReverse.length;
+        int [] reverseArray = new int[countOfElements];
+        for (int i = 0; i<arrayToReverse.length;i++){
+             countOfElements --;
+             reverseArray[i] = arrayToReverse[countOfElements];
+
+        }
+        return reverseArray;
     }
+
+    int[] sortArray(int[] arrayToSort){
+        Arrays.sort(arrayToSort); 
+        return arrayToSort;
+    }
+
+}
     
 class ArrayServiceTest {
     public static void main(String[] args) {
@@ -44,6 +55,7 @@ class ArrayServiceTest {
         test.shouldReturnThree();
         test.shouldReplaceFirstNumber();
         test.shouldReturnReversedArray();
+        test.shouldSortArray();
     }
 
     public void shouldReturnTrue(){
@@ -135,12 +147,27 @@ class ArrayServiceTest {
         }
 
     }
-    // public void shouldReturnReversedArray(){
-    //     ArrayService service = new ArrayService();
-    //     int [] array = {1,2,3,4,5};
-    //     int [] newArray = service.reverseArray(array);
-    //     for (int i:newArray){
-    //         System.out.println(i);
-    //     }
-    // }
+    public void shouldReturnReversedArray(){
+        ArrayService service = new ArrayService();
+        int [] array = {1,2,3,4,5};
+        int[] newArray = service.reverseArray(array);
+        int[] expectedArray = {5,4,3,2,1};
+        if (Arrays.equals(newArray,expectedArray)){
+            System.out.println("Array test : OK!");
+        }else{
+            System.out.println("Array test : FAILED!");
+        }
+    }
+    public void shouldSortArray(){
+        ArrayService service = new ArrayService();
+        int [] massive = {23,541,2,4,87,4,15,32};
+        service.sortArray(massive);
+        int [] expectedArray = {2,4,4,15,23,32,87,541};
+
+        if (Arrays.equals(expectedArray,massive)){
+            System.out.println("Arrays sort test : OK!");
+        }else{
+            System.out.println("Arrays sort test : FAILED!");
+        }
+    }
 }
