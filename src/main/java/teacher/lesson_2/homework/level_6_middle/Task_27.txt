@@ -5,7 +5,7 @@ teacher
         students.student_jurij_hlebnikov.students.edmund_zukovskis.lesson_2.homework
             students.edmund_zukovskis.lesson_2.level_1
                 Task_1
-                Task_2
+                students.hadjy_ahmadov.homework.lesson_2.level_1.Task_2
             students.edmund_zukovskis.lesson_2.level_2
                 Task_3
                 Task_4
@@ -16,7 +16,7 @@ teacher
         students.student_jurij_hlebnikov.students.edmund_zukovskis.lesson_2.homework
             students.edmund_zukovskis.lesson_2.level_1
                 Task_1
-                Task_2
+                students.hadjy_ahmadov.homework.lesson_2.level_1.Task_2
             students.edmund_zukovskis.lesson_2.level_2
                 Task_3
                 Task_4
