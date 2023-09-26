@@ -4,6 +4,9 @@ class Robot {
 
     String name;
 
+    public Robot() {
+    }
+
     Robot(String robotName) {
         this.name = robotName;
     }
@@ -14,11 +17,5 @@ class Robot {
 
     void sayYourName() {
         System.out.println("My name is " + this.name + "!");
-    }
-    void happyBirthday() {
-
-    }
-
-    public Robot() {
     }
 }

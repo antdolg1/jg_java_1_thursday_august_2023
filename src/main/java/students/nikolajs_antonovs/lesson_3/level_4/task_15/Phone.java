@@ -4,12 +4,12 @@ class Phone {
 
     String model;
 
-        Phone (String newModel) {
-            this.model = newModel;
-        }
+    Phone(String newModel) {
+        this.model = newModel;
+    }
 
-        String getModel() {
-            return this.model;
-        }
+    String getModel() {
+        return this.model;
+    }
 }
 

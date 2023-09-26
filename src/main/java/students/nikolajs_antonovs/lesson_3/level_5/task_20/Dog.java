@@ -24,12 +24,14 @@ class Dog {
         System.out.println("Woof");
     }
 
-    void happyBirthday() {
+    void happyBirthday(){
+        this.age = age +1;
+    } {
         System.out.println("Dog is celebrating birthday!");
     }
 
     void newAge() {
-        System.out.println("Dog age is " + newAge);
+        System.out.println("Dog age is " + age);
     }
 
 }

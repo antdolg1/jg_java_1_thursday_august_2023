@@ -8,6 +8,7 @@ class Book {
 
         this.title = bookTitle;
     }
+
     String getTitle() {
 
         return this.title;

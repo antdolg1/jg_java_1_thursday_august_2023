@@ -1,6 +1,6 @@
 package students.nikolajs_antonovs.lesson_3.level_2;
 
-class task_8 {
+class Task_8 {
 
     public static void main(String[] args) {
 
