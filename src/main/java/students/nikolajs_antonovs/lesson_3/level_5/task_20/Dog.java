@@ -4,12 +4,10 @@ class Dog {
 
     String name;
     int age;
-    int newAge;
 
     Dog(String dogName, int dogAge) {
         this.name = dogName;
         this.age = dogAge;
-        this.newAge = age + 1;
     }
 
     void sayName() {
