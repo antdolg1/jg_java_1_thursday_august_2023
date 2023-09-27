@@ -8,6 +8,5 @@ package students.julija_pilenkova.homework.lesson_6.level_4;
         while(a < b) {
             System.out.println("Бесконечный цикл");
         }
-
     }
 }

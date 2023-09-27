@@ -11,8 +11,6 @@ class ArrayService {
                 return true;
             }
         }
-
-
         return false;
     }
 
@@ -48,16 +46,15 @@ class ArrayService {
             left++;
             right--;
         }
-
     }
 
     void sortArray(int[] array) {
-        if(array == null || array.length == 0 ) {
+        if (array == null || array.length == 0) {
             System.out.println("You cant sort empty array!");
         }
-        for(int i = 0; i < array.length; i++) {
-            for(int j = i + 1; j < array.length; j++) {
-                if(array[i] > array[j]) {
+        for (int i = 0; i < array.length; i++) {
+            for (int j = i + 1; j < array.length; j++) {
+                if (array[i] > array[j]) {
                     int temp = array[i];
                     array[i] = array[j];
                     array[j] = temp;
@@ -65,6 +62,4 @@ class ArrayService {
             }
         }
     }
-
 }
-

@@ -8,6 +8,5 @@ public class ForLoopContinue {
                 continue;
             } System.out.println(i);
         }
-
     }
 }

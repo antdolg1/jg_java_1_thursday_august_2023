@@ -7,7 +7,6 @@ public class Task_3 {
         while (i <= 100) {
             System.out.println(i);
             i++;
-
         }
     }
 }

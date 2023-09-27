@@ -12,8 +12,6 @@ class DayOfTheWeekDetectorTest {
         test.shouldReturnSaturday();
         test.shouldReturnSunday();
         test.shouldReturnIncorrectNumber();
-
-
     }
 
     void shouldReturnMonday() {
@@ -71,6 +69,4 @@ class DayOfTheWeekDetectorTest {
             System.out.println(testName + "FAIL");
         }
     }
-
-
 }

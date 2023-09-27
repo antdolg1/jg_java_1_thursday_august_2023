@@ -7,12 +7,8 @@ public class ForInfiniteLoopBreak {
             System.out.println(i);
             if(i == 23) {
                 break;
-
             }
         }
-
-
     }
-
 }
 

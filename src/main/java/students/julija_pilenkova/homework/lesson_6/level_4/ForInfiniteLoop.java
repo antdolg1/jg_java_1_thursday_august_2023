@@ -6,6 +6,5 @@ package students.julija_pilenkova.homework.lesson_6.level_4;
         for(int i = 0; i < 100; i-- ) {
             System.out.println(i);
         }
-
     }
 }

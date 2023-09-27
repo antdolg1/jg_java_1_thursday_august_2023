@@ -7,7 +7,5 @@ package students.julija_pilenkova.homework.lesson_6.level_2;
         int dayNumber = detector.getDayNumberFromUser();
         String dayOfTheWeek = detector.findDayOfTheWeek(dayNumber);
         System.out.println(dayOfTheWeek);
-
-
     }
 }

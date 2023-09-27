@@ -10,19 +10,15 @@ class NumberUtilsDemo {
     public static void main(String[] args) {
         NumberUtilsDemo test = new NumberUtilsDemo();
         test.testIsEven(4);
-
-
     }
 
     void testIsEven(int number) {
         NumberUtils test = new NumberUtils();
         boolean result = test.isEven(number);
-        if(result) {
+        if (result) {
             System.out.println("number is even");
         } else {
             System.out.println("number is odd");
         }
-
     }
-
 }
