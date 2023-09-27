@@ -15,16 +15,13 @@ class Task_9 {
         System.out.print("\nThird number: ");
         int num3 = scan.nextInt();
 
-
-        if (num1 > num2 || num2 > num3) {
+        if (num1 > num2 && num2 > num3) {
             System.out.println("Decreasing");
-        } else if (num1 < num2 || num2 < num3) {
+        } else if (num1 < num2 && num2 < num3) {
             System.out.println("Increasing");
         } else {
             System.out.println("Neither increasing or decreasing order");
         }
-
-
     }
 }
 

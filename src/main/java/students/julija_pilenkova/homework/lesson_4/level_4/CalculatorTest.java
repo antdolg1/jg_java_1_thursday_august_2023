@@ -12,10 +12,7 @@ class CalculatorTest {
         calculatorTest.isEvenOrOddTest();
         calculatorTest.maxOfTwoNumbersTest();
         calculatorTest.maxOfThreeNumbersTest();
-
-
     }
-
 
     void sumTest() {
         int firstNumber = 10;
@@ -31,11 +28,11 @@ class CalculatorTest {
     }
 
     void subTest() {
-        int firstNumber = 10;
+        int firstNumber = 50;
         int secondNumber = 20;
         int expectedResult = 30;
         Calculator calculator = new Calculator();
-        int realResult = calculator.sum(firstNumber, secondNumber);
+        int realResult = calculator.sub(firstNumber, secondNumber);
         if (realResult == expectedResult) {
             System.out.println("Sub test = OK");
         } else {
@@ -45,29 +42,28 @@ class CalculatorTest {
 
     void multiplTest() {
         int firstNumber = 10;
-        int secondNumber = 20;
-        int expectedResult = 30;
+        int secondNumber = 10;
+        int expectedResult = 100;
         Calculator calculator = new Calculator();
-        int realResult = calculator.sum(firstNumber, secondNumber);
+        int realResult = calculator.multipl(firstNumber, secondNumber);
         if (realResult == expectedResult) {
-            System.out.println("Sum test = OK");
+            System.out.println("Multipl test = OK");
         } else {
-            System.out.println("sum test FAIL");
+            System.out.println("Multipl test FAIL");
         }
     }
 
     void divTest() {
         int firstNumber = 10;
-        int secondNumber = 20;
-        int expectedResult = 30;
+        int secondNumber = 2;
+        int expectedResult = 5;
         Calculator calculator = new Calculator();
-        int realResult = calculator.sum(firstNumber, secondNumber);
+        int realResult = calculator.div(firstNumber, secondNumber);
         if (realResult == expectedResult) {
-            System.out.println("Sum test = OK");
+            System.out.println("Div test = OK");
         } else {
-            System.out.println("sum test FAIL");
+            System.out.println("Div test FAIL");
         }
-
     }
 
     void isEvenOrOddTest() {
@@ -80,7 +76,6 @@ class CalculatorTest {
         } else {
             System.out.println("Even or Odd test FAIL");
         }
-
     }
 
     void maxOfTwoNumbersTest() {
@@ -94,8 +89,6 @@ class CalculatorTest {
         } else {
             System.out.println("Max of two numbers test if FAIL");
         }
-
-
     }
 
     void maxOfThreeNumbersTest() {
@@ -111,7 +104,4 @@ class CalculatorTest {
             System.out.println("Max of three numbers test - FAIL");
         }
     }
-
-
 }
-

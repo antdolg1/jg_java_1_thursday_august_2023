@@ -29,7 +29,6 @@ class Calculator {
             System.out.println("Equals");
         }
         return numberTwo;
-
     }
 
     public int maxOfThreeNumbers(int num1, int num2, int num3) {
@@ -42,21 +41,4 @@ class Calculator {
         }
         return num1;
     }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
