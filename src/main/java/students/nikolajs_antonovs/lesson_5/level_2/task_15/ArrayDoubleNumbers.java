@@ -10,19 +10,15 @@ class ArrayDoubleNumbers {
         int[] array = new int[3];
 
         Random random = new Random();
-
         for (int i = 0; i < array.length; i++) {
             array[i] = random.nextInt(10);
         }
-
-        System.out.println("");
         System.out.println("Array elements: " + Arrays.toString(array));
 
-        int multiplication = 0;
         for (int i = 0; i < array.length; i++) {
-            multiplication *= array[i]*2;
-
+            array[i] += 2;
         }
-        System.out.println("x2 of number: " + multiplication);
+        System.out.println("x2 of number: " + Arrays.toString(array));
     }
 }
+
