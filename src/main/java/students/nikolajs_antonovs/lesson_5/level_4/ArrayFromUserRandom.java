@@ -1,25 +1,24 @@
-package students.nikolajs_antonovs.lesson_5.level_2.task_15;
+package students.nikolajs_antonovs.lesson_5.level_4;
 
 import java.util.Arrays;
 import java.util.Random;
+import java.util.Scanner;
 
-class ArrayDoubleNumbers {
+class ArrayFromUserRandom {
 
     public static void main(String[] args) {
 
-        int[] array = new int[3];
+        System.out.print("Please, note array's length: ");
+
+        Scanner scanner = new Scanner(System.in);
+        int userArrayLength = scanner.nextInt();
+        int[] array = new int[userArrayLength];
 
         Random random = new Random();
         for (int i = 0; i < array.length; i++) {
             array[i] = random.nextInt(10);
         }
         System.out.println("Array elements: " + Arrays.toString(array));
-        System.out.println(" ");
-
-        for (int i = 0; i < array.length; i++) {
-            array[i] *= 2;
-        }
-        System.out.println("x2 of number: " + Arrays.toString(array));
     }
 }
 
