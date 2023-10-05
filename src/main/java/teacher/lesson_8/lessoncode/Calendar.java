@@ -53,6 +53,8 @@ public class Calendar {
 
 
 /*
+Detailed explanation of while logic
+
 while (date.getMonthValue() == month) {
 This line starts a while loop that continues until the date's month changes. The loop will iterate through all the days of the current month.
 
