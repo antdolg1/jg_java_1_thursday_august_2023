@@ -9,7 +9,7 @@ class Radius {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Test Data: ");
-        System.out.print("Radius = ");
+        System.out.print("Radius = " );
 
         double radius = scanner.nextDouble();
         System.out.println();
