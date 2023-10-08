@@ -6,13 +6,12 @@ public class Task_4 {
     public static void main(String[] args) {
         System.out.print("Введите целое число : ");
         Scanner scanner = new Scanner(System.in);
-        scanner.close();
         int isEven = scanner.nextInt();
-
-        if (isEven%2==0){
+        if (isEven % 2 == 0) {
             System.out.println("Чётное число");
-        }else if(isEven%2!=0){
+        } else {
             System.out.println("Нечётное число");
         }
+        scanner.close();
     }
 }
