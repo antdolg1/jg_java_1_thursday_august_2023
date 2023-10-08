@@ -1,4 +1,4 @@
-package students.anastassia_iljina.lesson_2_homework;
+package students.anastassia_iljina.lesson_2_homework.level_3;
 
 import java.util.Scanner;
 
@@ -9,7 +9,7 @@ public class MultiplicationTable {
         System.out.println("Введите целое число: ");
         int firstNumber = scanner.nextInt();
 
-        int one = firstNumber * 1;
+        int one = firstNumber;
         int two = firstNumber * 2;
         int three = firstNumber * 3;
         int four = firstNumber * 4;

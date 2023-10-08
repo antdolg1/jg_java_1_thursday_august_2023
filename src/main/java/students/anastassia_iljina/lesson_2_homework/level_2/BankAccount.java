@@ -1,4 +1,4 @@
-package students.anastassia_iljina.lesson_2_homework;
+package students.anastassia_iljina.lesson_2_homework.level_2;
 
 class BankAccount {
 
