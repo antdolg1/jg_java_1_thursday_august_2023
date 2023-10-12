@@ -34,9 +34,6 @@ public class LinearTraversal {
 
 
 /**
- * Steps:
- *
- * Setup:
  *
  * We need to keep track of the two largest numbers and the two smallest numbers in the array. Why? Because multiplying two large positive numbers or two large negative numbers can give us the highest product.
  * We'll use four variables: max1, max2 for the largest and second-largest numbers, and min1, min2 for the smallest and second-smallest numbers.
