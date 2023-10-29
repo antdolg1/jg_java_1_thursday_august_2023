@@ -17,5 +17,7 @@ public class task_2 {
         }else{
             System.out.println("Результат деления двух чисел : "+(firstDoubleNumber/secondDoubleNumber)); //Выписываем результат деления, если всё хорошо
         }
+        userData1.close();
+        userData2.close();
     }
 }

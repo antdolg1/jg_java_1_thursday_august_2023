@@ -1,0 +1,24 @@
+package students.aleksandrs_kunicins.homework.lesson_4.level_3;
+
+import java.util.Scanner;
+
+public class Task_9 {
+    public static void main(String[] args) {
+        System.out.print("Введите первое число : ");
+        Scanner sc = new Scanner(System.in);
+        int firstNumber = sc.nextInt();
+        System.out.print("Введите второе число : ");
+        int secondNumber = sc.nextInt();
+        System.out.print("Введите третье число : ");
+        int thirdNumber = sc.nextInt();
+        if (firstNumber < secondNumber && secondNumber < thirdNumber) {
+            System.out.println("increasing");
+        } else if (firstNumber > secondNumber && secondNumber > thirdNumber) {
+            System.out.println("decreasing");
+        } else {
+            System.out.println("Neither increasing or decreasing order");
+        }
+        sc.close();
+
+    }
+}
