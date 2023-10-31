@@ -19,6 +19,6 @@ public class Task_28 {
             }
         }
         System.out.println("Array " + Arrays.toString(array));
-        System.out.println("Max number is: " + minNumber);
+        System.out.println("Min number is: " + minNumber);
     }
 }
