@@ -15,6 +15,7 @@ public class SetDemo {
         hashSet.add("Jelgava");
         hashSet.add("Jurmala");
         hashSet.add("Ogre");
+        hashSet.add(null);
         hashSet.add("Ogre");
         hashSet.add("Ogre");
         hashSet.add("Ogre");
@@ -26,6 +27,7 @@ public class SetDemo {
         linkedHashSet.add("Riga");
         linkedHashSet.add("Jelgava");
         linkedHashSet.add("Jurmala");
+        linkedHashSet.add(null);
         linkedHashSet.add("Ventspils");
         linkedHashSet.add("Ventspils");
         linkedHashSet.add("Ventspils");
@@ -39,6 +41,7 @@ public class SetDemo {
         treeSet.add("Riga");
         treeSet.add("Jelgava");
         treeSet.add("Jurmala");
+//        treeSet.add(null); this will cause NPE (NullPointerException)
         treeSet.add("Ventspils");
         treeSet.add("Olaine");
         treeSet.add("Liepaja");
