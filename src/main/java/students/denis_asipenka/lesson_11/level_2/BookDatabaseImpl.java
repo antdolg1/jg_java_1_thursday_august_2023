@@ -124,10 +124,11 @@ public class BookDatabaseImpl implements BookDatabase {
             }
             list = temp.subList(startIndex, endIndex);
         } else {
-            list=temp;
+            list = temp;
         }
         return list;
     }
+
     @Override
     public Set<String> findUniqueAuthors() {
         Set<String> listAuthor = new LinkedHashSet<>();
@@ -193,10 +194,4 @@ public class BookDatabaseImpl implements BookDatabase {
         }
         return listReturn;
     }
-
-    public void print() {
-        System.out.println(linkedListBook);
-    }
-
-
 }

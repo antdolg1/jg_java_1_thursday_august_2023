@@ -8,8 +8,6 @@ public class AuthorSearchCriteria implements SearchCriteria {
         this.authorToSearch = authorToSearch;
     }
 
-
-
     public boolean match(Book book) {
         if (book.getAuthor().equalsIgnoreCase(this.authorToSearch)) {
             return true;

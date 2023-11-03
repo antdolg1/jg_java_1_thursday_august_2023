@@ -28,7 +28,6 @@ class BookLibrary {
         menuNumberToActionMap.put(11, new FindUniqueBooksUIAction(bookDatabase));
         menuNumberToActionMap.put(12, new GetAuthorToBooksMapUIAction(bookDatabase));
         menuNumberToActionMap.put(13, new GetEachAuthorBookCountUIAction(bookDatabase));
-
     }
 
     public void run() {
@@ -66,5 +65,4 @@ class BookLibrary {
             System.out.println("Пункт меню не существует: " + userSelectedMenuNumber);
         }
     }
-
 }

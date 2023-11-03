@@ -5,12 +5,13 @@ public class AndSearchCriteriaTest {
         AndSearchCriteriaTest test = new AndSearchCriteriaTest();
         test.andSearchCriteriaTest();
     }
+
     void andSearchCriteriaTest() {
         SearchCriteria authorSearchCriteria = new AuthorSearchCriteria("Marcel Proust1");
         SearchCriteria titleSearchCriteria = new TitleSearchCriteria("In Search of Lost Time");
 
         Book book1 = new Book("Marcel Proust1", "In Search of Lost Time");
-        AndSearchCriteria andSearchCriteria = new AndSearchCriteria(authorSearchCriteria,titleSearchCriteria);
+        AndSearchCriteria andSearchCriteria = new AndSearchCriteria(authorSearchCriteria, titleSearchCriteria);
         System.out.println(andSearchCriteria.match(book1));
         checkResult(andSearchCriteria.match(book1), "Тест на совпадение названия и имени: ");
     }

@@ -7,7 +7,8 @@ public class SortSearchCriteriaTest {
         SortSearchCriteriaTest test = new SortSearchCriteriaTest();
         test.sortNotHard();
     }
-    void sortNotHard(){
+
+    void sortNotHard() {
         BookDatabaseImpl bookDatabaseImpl = new BookDatabaseImpl();
         bookDatabaseImpl.save(new Book("Tina Turner", "One Flew Over the Cuckoo's Nest"));
         bookDatabaseImpl.save(new Book("Rowling", "Harry Potter and the Sorcerer's Stone"));

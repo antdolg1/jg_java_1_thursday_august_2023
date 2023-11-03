@@ -17,4 +17,3 @@ public class SortSearchCriteria implements SearchCriteria {
         return true;
     }
 }
-

@@ -5,19 +5,12 @@ import students.denis_asipenka.lesson_11.level_2.*;
 import java.util.List;
 import java.util.Scanner;
 
-public class FindUIAction implements UIAction{
+public class FindUIAction implements UIAction {
     private BookDatabase bookDatabase;
+
     public FindUIAction(BookDatabase bookDatabase) {
         this.bookDatabase = bookDatabase;
     }
-
-
-   // @Override
-//    public String toString() {
-//        return "FindUIAction{" +
-//                "bookDatabase=" + bookDatabase +
-//                '}';
-  //  }
 
     public void execute() {
         Scanner scanner = new Scanner(System.in);

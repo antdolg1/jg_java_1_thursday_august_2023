@@ -17,6 +17,7 @@ public class FindByIdUIAction implements UIAction {
     public FindByIdUIAction(BookDatabase bookDatabase) {
         this.bookDatabase = bookDatabase;
     }
+
     @Override
     public void execute() {
         Scanner scanner = new Scanner(System.in);

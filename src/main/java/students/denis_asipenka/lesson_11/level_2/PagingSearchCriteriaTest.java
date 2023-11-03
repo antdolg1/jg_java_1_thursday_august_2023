@@ -62,7 +62,6 @@ public class PagingSearchCriteriaTest {
         bookDatabaseImpl.save(new Book("Rowling", "Harry Potter and the Goblet of Fire"));
         bookDatabaseImpl.save(new Book("Ken Kesey", "One Flew Over the Cuckoo's Nest"));
         bookDatabaseImpl.save(new Book("Ken Kesey", "One Flew Over the Cuckoo's Nest"));
-
         SearchCriteria searchCriteria = new PagingSearchCriteria(1);
         List<Book> listReturn = bookDatabaseImpl.find(searchCriteria);
         System.out.println(listReturn);

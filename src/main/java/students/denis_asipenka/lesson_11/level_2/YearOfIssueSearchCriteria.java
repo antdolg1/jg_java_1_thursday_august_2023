@@ -15,4 +15,3 @@ class YearOfIssueSearchCriteria implements SearchCriteria {
         return false;
     }
 }
-

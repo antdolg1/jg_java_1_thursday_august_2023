@@ -22,8 +22,10 @@ public class BookDatabaseImplTest {
         test.getEachAuthorBookCount();
         test.findTestPageOnlyNotHard();
         test.findTestSortOnlyNotHard();
-        test.findTestSortAndPage();
-
+        test.findTestTitleAndPage();
+        test.findTestAuthorAndPage();
+        test.findTestTitleAndSort();
+        test.findTestPageAndSort();
     }
 
     void removeId() {
@@ -185,7 +187,6 @@ public class BookDatabaseImplTest {
         bookDatabaseImpl.deleteByTitle("One Flew Over the Cuckoo's Nest");
         checkResult(bookDatabaseImpl.linkedListBook.size() == result, "Тест на удаление всех книг определенного названия: ");
         checkResult(bookDatabaseImpl.linkedListBook.size() == 33, "Тест на удаление всех книг определенного названия (FAIL): ");
-
     }
 
     void removeAuthor() {
@@ -386,7 +387,6 @@ public class BookDatabaseImplTest {
         listResultNotPositive.add(new Book("Ken Kesey", "One Flew Over the Cuckoo's Nest"));
         checkResult(bookDatabaseImpl.findUniqueBooks().equals(listResult), "Тест метода который должен находить и возвращать все уникальные книги в библиотеке: ");
         checkResult(bookDatabaseImpl.findUniqueBooks().equals(listResultNotPositive), "Тест метода который должен находить и возвращать все уникальные книги в библиотеке (FAIL): ");
-
     }
 
     void containsTest() {
@@ -486,7 +486,6 @@ public class BookDatabaseImplTest {
         Book book14 = new Book("Rowling", "Harry Potter and the Goblet of Fire");
         Book book15 = new Book("Rowling", "One Flew Over the Cuckoo's Nest");
         Book book16 = new Book("Erik Larson", "The Long Way to a Small, Angry Planet");
-
         BookDatabaseImpl bookDatabaseImpl = new BookDatabaseImpl();
         bookDatabaseImpl.save(book1);
         bookDatabaseImpl.save(book2);
@@ -635,31 +634,153 @@ public class BookDatabaseImplTest {
         checkResult(bookDatabaseImpl.find(searchCriteria).equals(listResult), "Тест на реализацию вывода отсортированного списка: ");
         checkResult(bookDatabaseImpl.find(searchCriteria).equals(listResultNotPositive), "Тест на реализацию вывода отсортированного списка: (FAIL): ");
     }
-    void findTestSortAndPage() {
-        BookDatabaseImpl bookDatabaseImpl = new BookDatabaseImpl();
-        bookDatabaseImpl.save(new Book("Tina Turner", "One Flew Over the Cuckoo's Nest"));
-        bookDatabaseImpl.save(new Book("ARowling", "Harry Potter and the Sorcerer's Stone"));
-        bookDatabaseImpl.save(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
-        bookDatabaseImpl.save(new Book("Becky Chambers", "The Long Way to a Small, Angry Planet"));
-        bookDatabaseImpl.save(new Book("CMark Haddon", "The Curious Incident of the Dog in the Night-Time"));
-        bookDatabaseImpl.save(new Book("Rowling", "Harry Potter and the Goblet of Fire"));
-        bookDatabaseImpl.save(new Book("DKen Kesey", "One Flew Over the Cuckoo's Nest"));
-        bookDatabaseImpl.save(new Book("Tina Turner", "One Flew Over the Cuckoo's Nest"));
-        bookDatabaseImpl.save(new Book("ARowling", "Harry Potter and the Sorcerer's Stone"));
-        bookDatabaseImpl.save(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
-        bookDatabaseImpl.save(new Book("Becky Chambers", "The Long Way to a Small, Angry Planet"));
-        bookDatabaseImpl.save(new Book("CMark Haddon", "The Curious Incident of the Dog in the Night-Time"));
-        bookDatabaseImpl.save(new Book("Rowling", "Harry Potter and the Goblet of Fire"));
-        bookDatabaseImpl.save(new Book("DKen Kesey", "One Flew Over the Cuckoo's Nest"));
 
+    void findTestTitleAndPage() {
+        BookDatabaseImpl bookDatabaseImpl = new BookDatabaseImpl();
+        bookDatabaseImpl.save(new Book("Rowling1", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("Rowling2", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("Rowling3", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("Rowling4", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("Rowling5", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("DKen Kesey", "One Flew Over the Cuckoo's Nest"));
+        bookDatabaseImpl.save(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("Two One Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("One Rowling", "Harry Potter and the Prisoner of Azkaban"));
         List<Book> listResult = new LinkedList<>();
-        listResult.add(new Book("ARowling", "Harry Potter and the Sorcerer's Stone"));
-        listResult.add(new Book("Becky Chambers", "The Long Way to a Small, Angry Planet"));
-        listResult.add(new Book("CMark Haddon", "The Curious Incident of the Dog in the Night-Time"));
-        listResult.add(new Book("DKen Kesey", "One Flew Over the Cuckoo's Nest"));
+        listResult.add(new Book("One Rowling", "Harry Potter and the Prisoner of Azkaban"));
         listResult.add(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
-        listResult.add(new Book("Rowling", "Harry Potter and the Goblet of Fire"));
-        listResult.add(new Book("Tina Turner", "One Flew Over the Cuckoo's Nest"));
+        listResult.add(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        listResult.add(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        listResult.add(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        listResult.add(new Book("Rowling1", "Harry Potter and the Prisoner of Azkaban"));
+        listResult.add(new Book("Rowling2", "Harry Potter and the Prisoner of Azkaban"));
+        listResult.add(new Book("Rowling3", "Harry Potter and the Prisoner of Azkaban"));
+        listResult.add(new Book("Rowling4", "Harry Potter and the Prisoner of Azkaban"));
+        listResult.add(new Book("Rowling5", "Harry Potter and the Prisoner of Azkaban"));
+        List<Book> listResultNotPositive = new LinkedList<>();
+        listResultNotPositive.add(new Book("ARowling", "Harry Potter and the Sorcerer's Stone"));
+        listResultNotPositive.add(new Book("Becky Chambers", "The Long Way to a Small, Angry Planet"));
+        listResultNotPositive.add(new Book("CMark Haddon", "The Curious Incident of the Dog in the Night-Time"));
+        listResultNotPositive.add(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        listResultNotPositive.add(new Book("Rowling", "Harry Potter and the Goblet of Fire"));
+        listResultNotPositive.add(new Book("Tina Turner", "One Flew Over the Cuckoo's Nest"));
+        SearchCriteria pagingSearchCriteria = new PagingSearchCriteria(1);
+        SearchCriteria titleSearchCriteria = new TitleSearchCriteria("Harry Potter and the Prisoner of Azkaban");
+        SearchCriteria searchCriteria = new AndSearchCriteria(titleSearchCriteria, pagingSearchCriteria);
+        checkResult(bookDatabaseImpl.find(searchCriteria).equals(listResult), "Тест на реализацию сложного поиска поиск по названию и вывод постранично (может быть FAIL потому что выводит разную последовательность записей в коллекции): ");
+        checkResult(bookDatabaseImpl.find(searchCriteria).equals(listResultNotPositive), "Тест на реализацию сложного поиска поиск по названию и вывод постранично (FAIL: ");
+    }
+
+    void findTestAuthorAndPage() {
+        BookDatabaseImpl bookDatabaseImpl = new BookDatabaseImpl();
+        bookDatabaseImpl.save(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("DKen Kesey", "One Flew Over the Cuckoo's Nest"));
+        bookDatabaseImpl.save(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("One Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        List<Book> listResult = new LinkedList<>();
+        listResult.add(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        listResult.add(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        listResult.add(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        listResult.add(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        listResult.add(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        listResult.add(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        listResult.add(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        listResult.add(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        listResult.add(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        listResult.add(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        List<Book> listResultNotPositive = new LinkedList<>();
+        listResultNotPositive.add(new Book("ARowling", "Harry Potter and the Sorcerer's Stone"));
+        listResultNotPositive.add(new Book("Becky Chambers", "The Long Way to a Small, Angry Planet"));
+        listResultNotPositive.add(new Book("CMark Haddon", "The Curious Incident of the Dog in the Night-Time"));
+        listResultNotPositive.add(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        listResultNotPositive.add(new Book("Rowling", "Harry Potter and the Goblet of Fire"));
+        listResultNotPositive.add(new Book("Tina Turner", "One Flew Over the Cuckoo's Nest"));
+        SearchCriteria pagingSearchCriteria = new PagingSearchCriteria(1);
+        SearchCriteria authorSearchCriteria = new AuthorSearchCriteria("Rowling");
+        SearchCriteria searchCriteria = new AndSearchCriteria(authorSearchCriteria, pagingSearchCriteria);
+        checkResult(bookDatabaseImpl.find(searchCriteria).equals(listResult), "Тест на реализацию сложного поиска поиск по автору и вывод постранично: ");
+        checkResult(bookDatabaseImpl.find(searchCriteria).equals(listResultNotPositive), "Тест на реализацию сложного поиска поиск по автору и вывод постранично (FAIL): ");
+    }
+
+    void findTestTitleAndSort() {
+        BookDatabaseImpl bookDatabaseImpl = new BookDatabaseImpl();
+        bookDatabaseImpl.save(new Book("A Rowling1", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("Rowling2", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("Rowling3", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("D Rowling4", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("Rowling5", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("Ken Kesey", "One Flew Over the Cuckoo's Nest"));
+        bookDatabaseImpl.save(new Book("C Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("Two One Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("B Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("One Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("Rowling311", "Harry Potter and the Prisoner of Azkaban"));
+        List<Book> listResult = new LinkedList<>();
+        listResult.add(new Book("A Rowling1", "Harry Potter and the Prisoner of Azkaban"));
+        listResult.add(new Book("B Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        listResult.add(new Book("C Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        listResult.add(new Book("D Rowling4", "Harry Potter and the Prisoner of Azkaban"));
+        listResult.add(new Book("One Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        listResult.add(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        listResult.add(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        listResult.add(new Book("Rowling2", "Harry Potter and the Prisoner of Azkaban"));
+        listResult.add(new Book("Rowling3", "Harry Potter and the Prisoner of Azkaban"));
+        listResult.add(new Book("Rowling311", "Harry Potter and the Prisoner of Azkaban"));
+        listResult.add(new Book("Rowling5", "Harry Potter and the Prisoner of Azkaban"));
+        listResult.add(new Book("Two One Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        List<Book> listResultNotPositive = new LinkedList<>();
+        listResultNotPositive.add(new Book("ARowling", "Harry Potter and the Sorcerer's Stone"));
+        listResultNotPositive.add(new Book("Becky Chambers", "The Long Way to a Small, Angry Planet"));
+        listResultNotPositive.add(new Book("CMark Haddon", "The Curious Incident of the Dog in the Night-Time"));
+        listResultNotPositive.add(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        listResultNotPositive.add(new Book("Rowling", "Harry Potter and the Goblet of Fire"));
+        listResultNotPositive.add(new Book("Tina Turner", "One Flew Over the Cuckoo's Nest"));
+        SearchCriteria sortSearchCriteria = new SortSearchCriteria(true);
+        SearchCriteria titleSearchCriteria = new TitleSearchCriteria("Harry Potter and the Prisoner of Azkaban");
+        SearchCriteria searchCriteria = new AndSearchCriteria(titleSearchCriteria, sortSearchCriteria);
+        checkResult(bookDatabaseImpl.find(searchCriteria).equals(listResult), "Тест на реализацию сложного поиска поиск по названию и сортировка: ");
+        checkResult(bookDatabaseImpl.find(searchCriteria).equals(listResultNotPositive), "Тест на реализацию сложного поиска поиск по названию и сортировка (FAIL): ");
+    }
+
+    void findTestPageAndSort() {
+        BookDatabaseImpl bookDatabaseImpl = new BookDatabaseImpl();
+        bookDatabaseImpl.save(new Book("A Rowling1", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("Rowling2", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("Rowling3", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("D Rowling4", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("Rowling5", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("Ken Kesey", "One Flew Over the Cuckoo's Nest"));
+        bookDatabaseImpl.save(new Book("C Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("Two One Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("B Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("One Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        bookDatabaseImpl.save(new Book("Rowling311", "Harry Potter and the Prisoner of Azkaban"));
+        List<Book> listResult = new LinkedList<>();
+        listResult.add(new Book("A Rowling1", "Harry Potter and the Prisoner of Azkaban"));
+        listResult.add(new Book("B Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        listResult.add(new Book("C Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        listResult.add(new Book("D Rowling4", "Harry Potter and the Prisoner of Azkaban"));
+        listResult.add(new Book("Ken Kesey", "One Flew Over the Cuckoo's Nest"));
+        listResult.add(new Book("One Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        listResult.add(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        listResult.add(new Book("Rowling", "Harry Potter and the Prisoner of Azkaban"));
+        listResult.add(new Book("Rowling2", "Harry Potter and the Prisoner of Azkaban"));
+        listResult.add(new Book("Rowling3", "Harry Potter and the Prisoner of Azkaban"));
         List<Book> listResultNotPositive = new LinkedList<>();
         listResultNotPositive.add(new Book("ARowling", "Harry Potter and the Sorcerer's Stone"));
         listResultNotPositive.add(new Book("Becky Chambers", "The Long Way to a Small, Angry Planet"));
@@ -669,20 +790,11 @@ public class BookDatabaseImplTest {
         listResultNotPositive.add(new Book("Tina Turner", "One Flew Over the Cuckoo's Nest"));
         SearchCriteria sortSearchCriteria = new SortSearchCriteria(true);
         SearchCriteria pagingSearchCriteria = new PagingSearchCriteria(1);
-       // SearchCriteria authorSearchCriteria = new AuthorSearchCriteria("ARowling");
-      //  SearchCriteria titleSearchCriteria = new TitleSearchCriteria("The Curious Incident of the Dog in the Night-Time");
-
-       // SortSearchCriteria searchCriteria = new OrSearchCriteria(authorSearchCriteria,titleSearchCriteria);
-//        SearchCriteria authorSearchCriteria = new AuthorSearchCriteria("Agatha Christie");
-//        SearchCriteria titleSearchCriteria = new TitleSearchCriteria("One Flew Over the Cuckoo's Nest");
-        SearchCriteria searchCriteria = new OrSearchCriteria(sortSearchCriteria, pagingSearchCriteria);
-        System.out.println("Day X");
-        System.out.println(bookDatabaseImpl.find(searchCriteria));
-      //  checkResult(bookDatabaseImpl.find(searchCriteria).equals(listResult), "Тест на реализацию сложного поиска: ");
-
-//        checkResult(bookDatabaseImpl.find(d).equals(listResult), "Тест на реализацию вывода отсортированного списка: ");
-//        checkResult(bookDatabaseImpl.find(j).equals(listResultNotPositive), "Тест на реализацию вывода отсортированного списка: (FAIL): ");
+        SearchCriteria searchCriteria = new AndSearchCriteria(pagingSearchCriteria, sortSearchCriteria);
+        checkResult(bookDatabaseImpl.find(searchCriteria).equals(listResult), "Тест на реализацию сложного поиска поиск сортировка и постраничный вывод: ");
+        checkResult(bookDatabaseImpl.find(searchCriteria).equals(listResultNotPositive), "Тест на реализацию сложного поиска поиск сортировка и постраничный вывод (FAIL): ");
     }
+
 
     private void checkResult(boolean condition, String testName) {
         if (condition) {

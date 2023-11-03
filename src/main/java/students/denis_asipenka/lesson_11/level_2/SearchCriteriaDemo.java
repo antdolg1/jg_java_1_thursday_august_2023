@@ -8,12 +8,7 @@ public class SearchCriteriaDemo {
         SearchCriteria pagingSearchCriteria = new PagingSearchCriteria(1);
         SearchCriteria sortSearchCriteria = new SortSearchCriteria(true);
         SearchCriteria searchCriteria = new AndSearchCriteria(authorSearchCriteria, titleSearchCriteria);
-        SearchCriteria searchCriteria1 = new AndSearchCriteria(authorSearchCriteria,yearOfIssueToSearch);
-        SearchCriteria searchCriteria2 = new OrSearchCriteria(searchCriteria,searchCriteria1);
+        SearchCriteria searchCriteria1 = new AndSearchCriteria(authorSearchCriteria, yearOfIssueToSearch);
+        SearchCriteria searchCriteria2 = new OrSearchCriteria(searchCriteria, searchCriteria1);
     }
-
-
-
-
-
 }

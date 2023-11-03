@@ -28,5 +28,4 @@ public class DeleteByBookUIAction implements UIAction {
             System.out.println("Книга не найдена!");
         }
     }
-
 }

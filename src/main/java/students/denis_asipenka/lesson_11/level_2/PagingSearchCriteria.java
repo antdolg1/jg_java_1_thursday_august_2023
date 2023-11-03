@@ -14,6 +14,6 @@ public class PagingSearchCriteria implements SearchCriteria {
     }
 
     public boolean match(Book book) {
-            return true;
-        }
+        return true;
     }
+}

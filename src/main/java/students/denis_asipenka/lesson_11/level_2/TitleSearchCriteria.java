@@ -13,5 +13,4 @@ public class TitleSearchCriteria implements SearchCriteria {
         }
         return false;
     }
-
 }

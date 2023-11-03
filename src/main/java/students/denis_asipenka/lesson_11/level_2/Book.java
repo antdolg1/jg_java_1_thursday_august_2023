@@ -2,7 +2,7 @@ package students.denis_asipenka.lesson_11.level_2;
 
 import java.util.Objects;
 
-public class Book implements Comparable<Book>{
+public class Book implements Comparable<Book> {
     private Long id;
     private String title;
     private String author;
@@ -60,6 +60,7 @@ public class Book implements Comparable<Book>{
                 ", author='" + author + '\'' +
                 '}';
     }
+
     @Override
     public int compareTo(Book o) {
         return author.compareTo(o.author);

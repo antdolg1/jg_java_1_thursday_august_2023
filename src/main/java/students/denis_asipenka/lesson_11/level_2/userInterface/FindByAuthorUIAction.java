@@ -7,7 +7,7 @@ import students.denis_asipenka.lesson_11.level_2.BookDatabase;
 import java.util.List;
 import java.util.Scanner;
 
-public class FindByAuthorUIAction implements UIAction{
+public class FindByAuthorUIAction implements UIAction {
     private BookDatabase bookDatabase;
 
     public FindByAuthorUIAction() {
@@ -16,6 +16,7 @@ public class FindByAuthorUIAction implements UIAction{
     public FindByAuthorUIAction(BookDatabase bookDatabase) {
         this.bookDatabase = bookDatabase;
     }
+
     @Override
     public void execute() {
         Scanner scanner = new Scanner(System.in);
