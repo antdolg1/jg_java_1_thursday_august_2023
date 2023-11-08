@@ -11,4 +11,3 @@ public class WhileInfiniteLoopBreak {
         System.out.println("Infinity WHILE loop stopped");
     }
 }
-

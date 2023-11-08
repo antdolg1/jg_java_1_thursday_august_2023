@@ -8,7 +8,7 @@ public class FizzBuzzTest {
         test.fizzBuzzTest();
         test.fizzTest();
         test.buzzTest();
-            }
+    }
 
     void fizzBuzzTest() {
         FizzBuzz detector = new FizzBuzz();
@@ -17,6 +17,7 @@ public class FizzBuzzTest {
         String result = (real == expected) ? "FizzBuzz test OK" : "FizzBuzz test FAILED";
         System.out.println(result);
     }
+
     void fizzTest() {
         FizzBuzz detector = new FizzBuzz();
         String expected = "Fizz";
@@ -24,6 +25,7 @@ public class FizzBuzzTest {
         String result = (real == expected) ? "Fizz test OK" : "Fizz test FAILED";
         System.out.println(result);
     }
+
     void buzzTest() {
         FizzBuzz detector = new FizzBuzz();
         String expected = "Buzz";
@@ -31,4 +33,4 @@ public class FizzBuzzTest {
         String result = (real == expected) ? "Buzz test OK" : "Buzz test FAILED";
         System.out.println(result);
     }
-    }
+}
