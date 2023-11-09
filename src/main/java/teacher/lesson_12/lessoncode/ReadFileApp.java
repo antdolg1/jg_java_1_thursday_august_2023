@@ -1,6 +1,5 @@
 package teacher.lesson_12.lessoncode;
 
-import javax.security.sasl.SaslClient;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
