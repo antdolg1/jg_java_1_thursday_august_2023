@@ -10,7 +10,7 @@ public class ArrayService {
         return false;
     }
 
-    int CountingOccurrences(int[] arr, int number) {
+    int сountingOccurrences(int[] arr, int number) {
         int numberOcc = 0;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == number) {
@@ -21,20 +21,13 @@ public class ArrayService {
     }
 
     boolean replaceFirst(int[] arr, int oldNumber, int newNumber) {
-        int index = -1;
-        boolean result = true;
-        for (int i = arr.length - 1; i > 0; i--) {
+        for (int i = 0; i < arr.length; i++) {
             if (arr[i] == oldNumber) {
-                index = i;
+                arr[i] = newNumber;
+                return true;
             }
         }
-        if (index < 0) {
-            result = false;
-        } else {
-            arr[index] = newNumber;
-            result = true;
-        }
-        return result;
+        return false;
     }
 
     int replaceAllNumber(int[] arr, int oldNumber, int newNumber) {
