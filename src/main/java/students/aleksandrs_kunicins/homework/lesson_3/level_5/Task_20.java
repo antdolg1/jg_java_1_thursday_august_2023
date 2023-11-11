@@ -11,7 +11,7 @@
 //}
 //
 //class DogDemo {
-//    public static void main(String[] args) {
+//    public static void main(task_7[] args) {
 //        Dog dog = new Dog();
 //        dog.happyBirthday();
 //        dog.happyBirthday();

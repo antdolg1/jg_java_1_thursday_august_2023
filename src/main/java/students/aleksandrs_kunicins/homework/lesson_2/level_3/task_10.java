@@ -7,7 +7,8 @@ public class task_10 {
         double radius = scanner.nextDouble();//Объявляем переменную для хранения числа
         System.out.println("Perimeter is = " + (2*Math.PI*radius)); //Используя метод для расчётвов выводим периметр 
         System.out.println("Area is = " + (Math.PI*radius*radius));//Используя метод для расчётвов выводим площадь  
-
+        
+        scanner.close();
 
     }
 }

@@ -8,5 +8,6 @@ public class task_9 {
         for(int number = 1; number<11;number++){ //Создаём цикл, потому что мне лень прописывать каждую строчку
             System.out.println(userNumber + " X " + number + " = " + (number*userNumber)); //Выводим числа
         }
+        scanner.close();
     }
 }
