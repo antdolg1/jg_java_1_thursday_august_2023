@@ -1,4 +1,4 @@
-package students.valeriia_holovan.lesson_4.level_2;
+package students.valeriia_holovan.lesson_4.level_2.task_7;
 
 import java.util.Scanner;
 
