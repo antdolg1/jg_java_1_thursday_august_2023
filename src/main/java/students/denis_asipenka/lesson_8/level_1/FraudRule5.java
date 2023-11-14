@@ -8,7 +8,8 @@ public class FraudRule5 extends FraudRule {
     public boolean isFraud(Transaction t) {
         if (t.getTrader().getCity().equalsIgnoreCase("Germany") && (t.getAmount() > 1000)) {
             return true;
-        } else
+        } else {
             return false;
+        }
     }
 }

@@ -8,7 +8,8 @@ public class FraudRule4 extends FraudRule {
     public boolean isFraud(Transaction t) {
         if (t.getTrader().getCity().equalsIgnoreCase("JamAica")) {
             return true;
-        } else
+        } else {
             return false;
+        }
     }
 }

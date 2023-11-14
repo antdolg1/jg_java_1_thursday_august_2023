@@ -8,7 +8,8 @@ public class FraudRule1 extends FraudRule {
     public boolean isFraud(Transaction t) {
         if (t.getTrader().getFullName().equalsIgnoreCase("Pokemon")) {
             return true;
-        } else
+        } else {
             return false;
+        }
     }
 }
