@@ -1,0 +1,8 @@
+Почему класс AccessDeniedException в нашем случае
+лучше наследовать от Exception, а не от RuntimeException?
+
+class AccessDeniedException extends Exception {
+
+}
+Ответ : потому что Exception является для всех проверяемых исключений , а RuntimeException для всех непроверяемых
+исключений.
