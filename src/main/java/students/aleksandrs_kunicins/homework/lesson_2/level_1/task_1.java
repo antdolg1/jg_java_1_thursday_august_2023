@@ -17,5 +17,7 @@ class Task_1{  //Создаю класс с нужным имнем
         }else{
             System.out.println("Результат деления двух чисел : "+(firstNumber/secondNumber)); //Выписываем результат деления, если всё хорошо
         }
+        userData1.close();
+        userData2.close();
     }
 }

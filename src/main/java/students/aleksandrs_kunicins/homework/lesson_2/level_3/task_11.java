@@ -12,5 +12,9 @@ public class task_11 {
     Scanner third_scanner = new Scanner(System.in);//Создаём объект, который будет использоваться для чтении числа с пользователя
     double thirdNumber = second_scanner.nextDouble();//Объявляем переменную для хранения числа
     System.out.println("Среднее арефметическое : " + (firstNUmber+secondNUmber+thirdNumber)/3);//Выводим результат
+
+    first_scanner.close();
+    second_scanner.close();
+    third_scanner.close();
     }
 }

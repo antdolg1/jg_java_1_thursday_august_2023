@@ -8,8 +8,7 @@ public class NewCalculator {
         Scanner chislo = new Scanner(System.in);
         double firstNum = chislo.nextDouble();
         System.out.println ("Введите второе число");
-        Scanner chislo2 = new Scanner(System.in);
-        double secondNum = chislo2.nextDouble();
+        double secondNum = chislo.nextDouble();
 
         System.out.println("Сумма двух чисел = " + (firstNum + secondNum));
         System.out.println("Разность двух чисел = " + (firstNum - secondNum));

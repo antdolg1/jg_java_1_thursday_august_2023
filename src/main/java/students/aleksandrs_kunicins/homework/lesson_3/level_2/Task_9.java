@@ -6,6 +6,7 @@ public class Task_9 {
         Scanner scanner = new Scanner(System.in);
         String name = scanner.nextLine();
         System.out.println("Hello "+ name + "!");
+        scanner.close();
 
     }
 }
