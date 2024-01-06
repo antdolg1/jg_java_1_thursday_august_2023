@@ -1,6 +1,6 @@
 package students.anastassia_iljina.lesson_4.homework.level_5;
-public class LightColorDetectorTest {
 
+public class LightColorDetectorTest {
     public static void main(String[] args) {
         LightColorDetectorTest lightColorDetectorTest = new LightColorDetectorTest();
         lightColorDetectorTest.violetColorTest();
@@ -97,5 +97,4 @@ public class LightColorDetectorTest {
             System.out.println("FAIL");
         }
     }
-
 }
